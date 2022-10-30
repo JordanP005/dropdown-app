@@ -1,51 +1,58 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import _ from "lodash";
+import { ConstructionOutlined } from "@mui/icons-material";
 
 function Dropdown(props) {
   const featArr = [
     {
-      name: "ToDo List",
-      icon: <i class="fa-solid fa-list-check icon-todo"></i>,
+      name: "Campaigns",
+      icon: <i class="fa-solid fa-rectangle-ad icon-ad"></i>,
     },
     {
-      name: "Calender",
-      icon: <i class="fa-solid fa-calendar-days icon-cal"></i>,
+      name: "Creative",
+      icon: <i class="fa-solid fa-icons icon-cont"></i>,
     },
     {
-      name: "Reminders",
-      icon: <i class="fa-solid fa-bell icon-rem"></i>,
+      name: "SEO",
+      icon: <i class="fa-brands fa-searchengin icon-seo"></i>,
     },
     {
-      name: "Planning",
-      icon: <i class="fa-solid fa-clock icon-plan"></i>,
+      name: "Sales",
+      icon: <i class="fa-solid fa-chart-line icon-sales"></i>,
     },
   ];
+
+  const compArr = ["History", "Our Team"];
 
   function handleClick(event) {
     console.log(event.target.key);
   }
 
-  const compArr = ["History", "Our Team", "Blog"];
-
-  if (props.name === "feat") {
+  if (props.name === "services") {
     return (
       <div className="dropdown-menu">
         {featArr.map((item) => {
           return (
             <p onClick={handleClick} key={item.name}>
-              {item.icon}
-              {item.name}
+              <Link to={`/${_.toLower(item.name)}`}>
+                {item.icon}
+                {item.name}
+              </Link>
             </p>
           );
         })}
       </div>
     );
-  } else if (props.name === "comp") {
+  } else if (props.name === "company") {
     return (
       <div className="dropdown-menu">
         {compArr.map((item) => {
+          let str = item.replace(/\s/g, "");
+          console.log(str);
           return (
             <p onClick={handleClick} key={item}>
-              {item}
+              <Link to={`/${_.toLower(str)}`}>{item}</Link>
             </p>
           );
         })}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 function Body() {
   return (
@@ -14,7 +15,9 @@ function Body() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud
           </p>
-          <button className="learnmore">Learn more</button>
+          <Link to="/info">
+            <button className="learnmore">Learn More</button>
+          </Link>
           <div className="company-div">
             <p>
               <img src="\images\client-databiz.svg" alt="client-databiz.svg" />
@@ -35,7 +38,7 @@ function Body() {
         </div>
       </div>
       <div className="img-div">
-        <img src="\images\image-hero-desktop.png" alt="hero-desktop.svg" />
+        <img src="\images\3D-main.png" alt="hero-desktop.svg" />
       </div>
     </div>
   );

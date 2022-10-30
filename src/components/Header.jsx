@@ -1,6 +1,7 @@
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Dropdown from "./Dropdown";
+import { Outlet, Link } from "react-router-dom";
 
 function Header() {
   const [visible, setVisible] = React.useState({
@@ -29,11 +30,13 @@ function Header() {
   return (
     <nav>
       <div className="main-nav">
-        <h1>AdSnap</h1>
+        <h1>
+          <Link to="/">AdSnap</Link>
+        </h1>
         <div className="right-tags">
           <div className="dropdown-div">
             <p onClick={handleDrop} id="featuresState">
-              Features{" "}
+              Services{" "}
               <KeyboardArrowDownIcon
                 style={
                   !visible.featuresState
@@ -42,7 +45,7 @@ function Header() {
                 }
               />
             </p>
-            {visible.featuresState ? <Dropdown name="feat" /> : null}
+            {visible.featuresState ? <Dropdown name="services" /> : null}
           </div>
           <div className="dropdown-div">
             <p onClick={handleDrop} id="companyState">
@@ -55,15 +58,20 @@ function Header() {
                 }
               />
             </p>
-            {visible.companyState ? <Dropdown name="comp" /> : null}
+            {visible.companyState ? <Dropdown name="company" /> : null}
           </div>
-          <p>Careers</p>
-          <p>About</p>
+          <p>
+            <Link to="/pricing">Pricing</Link>
+          </p>
+          <p>
+            <Link to="/about">About</Link>
+          </p>
         </div>
       </div>
-      <div className="login-div">
-        <p>Login</p>
-        <p className="register">Register</p>
+      <div className="contact-div">
+        <Link to="/contact">
+          <p className="contact">Contact</p>
+        </Link>
       </div>
     </nav>
   );
