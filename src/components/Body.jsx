@@ -38,7 +38,7 @@ function Body() {
         </div>
       </div>
       <div className="img-div">
-        <img src="\images\3D-main.png" alt="hero-desktop.svg" />
+        <img src="\images\3d-main.png" alt="hero-desktop.svg" />
       </div>
     </div>
   );
