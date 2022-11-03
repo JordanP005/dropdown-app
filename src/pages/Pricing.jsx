@@ -12,9 +12,9 @@ function Pricing() {
               <h1>Basic</h1>
               <h2>features</h2>
               <ul>
-                <li>Feature 1</li>
-                <li>Feature 4</li>
-                <li>Feature 3</li>
+                <li>4 Ad campaigns</li>
+                <li>3 Ad creatives</li>
+                <li>SEO optimization for 1 site</li>
               </ul>
             </div>
 
@@ -25,9 +25,9 @@ function Pricing() {
               <h1>Premium</h1>
               <h2>features</h2>
               <ul>
-                <li>Feature 1</li>
-                <li>Feature 4</li>
-                <li>Feature 3</li>
+                <li>6 Ad campaigns</li>
+                <li>5 Ad creatives</li>
+                <li>SEO optimization for 3 sites</li>
               </ul>
             </div>
             <h1>$75/PM</h1>
@@ -37,9 +37,9 @@ function Pricing() {
               <h1>Enterpirse</h1>
               <h2>features</h2>
               <ul>
-                <li>Feature 1</li>
-                <li>Feature 4</li>
-                <li>Feature 3</li>
+                <li>8 Ad campaigns</li>
+                <li>8 Ad creatives</li>
+                <li>SEO optimization for 5 sites</li>
               </ul>
             </div>
             <h1>$100/PM</h1>

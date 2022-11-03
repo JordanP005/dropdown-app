@@ -5,17 +5,20 @@ function Body() {
   return (
     <div className="body-main">
       <div className="body-div">
-        <div>
-          <h1 className="body-h1">The Future </h1>
-          <h1 className="body-h1">of Advertising</h1>
+        <div className="body-h1">
+          <h1>
+            The Future
+            <br />
+            of Advertising
+          </h1>
         </div>
         <div className="body-bottom">
           <p className="body-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud
+            Take your business to the next level. Reach new audiences and expand
+            your clientbase with us. We do all the back-end work while you watch
+            your business grow!
           </p>
-          <Link to="/info">
+          <Link to="/campaigns">
             <button className="learnmore">Learn More</button>
           </Link>
           <div className="company-div">

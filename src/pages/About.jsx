@@ -8,13 +8,10 @@ function About() {
       <div className="about-div">
         <h1>About</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          We created this company to bring business out of the dark ages of
+          physical advertising and into the modern era of digital marketing. We
+          save business thousands of dollars while also helping them reach new
+          and bigger audiences.
         </p>
       </div>
     </div>
