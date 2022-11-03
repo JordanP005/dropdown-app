@@ -14,6 +14,7 @@ import Seo from "../pages/Seo";
 import Sales from "../pages/Sales";
 import Info from "../pages/Info";
 import Contact from "../pages/Contact";
+import Submitted from "../pages/Submitted";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
       <Route path="/creative" element={<Creative />} />
       <Route path="/seo" element={<Seo />} />
       <Route path="/sales" element={<Sales />} />
-      <Route path="/info" element={<Info />} />
+      <Route path="/submitted" element={<Submitted />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
